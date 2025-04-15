@@ -8,6 +8,22 @@
   gtag('js', new Date());
   gtag('config', 'G-R1NV6WECXY');
 </script>
+<script>
+  (function(d,t) {
+    var BASE_URL="http://chat.hardcodes.agency";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: '6MVUEwNUWvJNgLmuRenWCjM4',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=*no*">
